@@ -1,0 +1,16 @@
+#Base Image
+FROM python:3.11
+
+#working directory
+WORKDIR /app
+
+#copy code into container
+COPY . . 
+
+#required libraries
+RUN pip -r install flask*******
+
+#Run
+CMD ["python","app.py"]
+
+
